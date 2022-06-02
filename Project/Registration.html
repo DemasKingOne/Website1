@@ -3,14 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>Наименование сайта</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <h1>Регистрация</h1>
-    <h2>Меню сайта</h2>
+   <h1>Регистрация</h1>
+   <h2>Меню сайта</h2>
     <hr>
-    <ul>
-        <a href="Registration.html"><li>Регистрация на сайте</li></a>
-        <li>ФИО</li>
-    </ul>
+        <div class="wrapper">
+            <div class="content">
+                <div class="menu">
+                    <ul>
+                        <a href="Registration.html"><li>Главная</li></a>
+                        <a href="Registration.html"><li>Каталог</li></a>
+                        <a href="Registration.html"><li>Регистрация</li></a>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="forma">
+                    <form action="#">
+                        ФИО<input id="name" type="text" placeholder="Фамилия Имя Очество">
+                        Логин<input id="login" type="text">
+                        Пароль<input id="password" type="password">
+                        Почта<input  id="email" type="email" placeholder="test@mail.ru">
+                        <input type="submit" onclick="guess ()">
+                        <input type="reset">
+                    </form>
+                </div>
+            </div>
+            <footer>
+                Подвал
+            </footer>
+        </div>
+    <script src = "Script.js"></script>
 </body>
 </html>
